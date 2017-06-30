@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda' //lambda
+apply from: 'tinkerpatch.gradle'
+
+android {
+    signingConfigs {
+        app {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('E:/git/androidDemo/androiddemo.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "androiddemo.zhou.com.androiddemo"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.app
+        }
+    }
+    //lambda
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:25.3.1'
+    //拼音  https://github.com/promeG/TinyPinyin
+    compile 'com.github.promeg:tinypinyin:2.0.3'
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //权限
+    compile 'com.yanzhenjie:permission:1.0.5'
+    //热修复
+    //可选，用于生成application类
+    provided 'com.tencent.tinker:tinker-android-anno:1.7.11'
+    //tinker的核心库
+    compile 'com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.1.7'
+}
