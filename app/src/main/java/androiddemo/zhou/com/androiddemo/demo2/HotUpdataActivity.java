@@ -31,6 +31,6 @@ public class HotUpdataActivity extends AppCompatActivity{
     }
 
     public void hotUpdata(View view) {
-        mtv.setText("这是修复后的操作");
+        mtv.setText("这是以前代码");
     }
 }
