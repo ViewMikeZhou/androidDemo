@@ -31,6 +31,6 @@ public class HotUpdataActivity extends AppCompatActivity{
     }
 
     public void hotUpdata(View view) {
-        mtv.setText("这是修复后的app");
+        mtv.setText("这是一个 tinkerPach打出的数据");
     }
 }

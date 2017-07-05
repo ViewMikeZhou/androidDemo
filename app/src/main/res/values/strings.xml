@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Demo合集</string>
+
+    <string name="svg_icon">&#xe615;</string>
 </resources>

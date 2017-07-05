@@ -26,6 +26,7 @@
         <activity android:name=".demo2.HotUpdataActivity"/>
         <activity android:name=".demo2.RecycleViewheadStickActivity"/>
         <activity android:name=".WifiActivity"/>
+        <activity android:name=".SingalActivity"/>
     </application>
 
 </manifest>

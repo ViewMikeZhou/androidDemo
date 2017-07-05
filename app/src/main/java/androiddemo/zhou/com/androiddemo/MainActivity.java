@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements Myadatper.OnItemC
         mList.add("热更新");
         mList.add("Recyview头部悬浮");
         mList.add("wifi连接");
+        mList.add("信号机Demo");
         mAdapter = new Myadatper(mList);
         mAdapter.setOnItemClick(this);
         recyview.setAdapter(mAdapter);
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements Myadatper.OnItemC
                break;
            case "wifi连接":
                startActivity(new Intent(this,WifiActivity.class));
+               break;
+           case "信号机Demo":
+               startActivity(new Intent(this,SingalActivity.class));
                break;
        }
     }
