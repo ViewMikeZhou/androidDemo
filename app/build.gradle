@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda' //lambda
 apply from: 'tinkerpatch.gradle'
-
+apply plugin: 'com.jakewharton.hugo'
 android {
     signingConfigs {
         app {
@@ -55,4 +55,11 @@ dependencies {
     compile 'com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.1.7'
     //nice spinner
     compile 'com.github.arcadefire:nice-spinner:1.2'
+    // 上传下载menu
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    //fabTransitionActivity
+    compile 'com.bowyer.app:fabtransitionlayout:0.4.0@aar'
+    //expandRecycleView
+    compile 'com.thoughtbot:expandablerecyclerview:1.3'
+
 }

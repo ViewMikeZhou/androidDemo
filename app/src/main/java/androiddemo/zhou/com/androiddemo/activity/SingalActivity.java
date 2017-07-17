@@ -1,4 +1,4 @@
-package androiddemo.zhou.com.androiddemo;
+package androiddemo.zhou.com.androiddemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androiddemo.zhou.com.androiddemo.R;
 import androiddemo.zhou.com.androiddemo.fragment.TimePeriodFragment;
 import androiddemo.zhou.com.androiddemo.util.GlobalUtil;
 

@@ -12,7 +12,7 @@ import java.util.List;
  * Created by Administrator on 2017/6/16.
  */
 
-class Myadatper extends RecyclerView.Adapter<Myadatper.holder> {
+public class Myadatper extends RecyclerView.Adapter<Myadatper.holder> {
     private  List<String> list;
     public OnItemClick mOnItemClick;
 
@@ -55,7 +55,7 @@ class Myadatper extends RecyclerView.Adapter<Myadatper.holder> {
 
 
 
-    interface OnItemClick{
+    public interface OnItemClick{
         void click(String messaga);
     }
 }

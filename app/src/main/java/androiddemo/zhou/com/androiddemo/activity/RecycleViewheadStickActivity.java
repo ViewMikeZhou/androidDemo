@@ -1,4 +1,4 @@
-package androiddemo.zhou.com.androiddemo.demo2;
+package androiddemo.zhou.com.androiddemo.activity;
 
 import android.graphics.Rect;
 import android.os.Bundle;

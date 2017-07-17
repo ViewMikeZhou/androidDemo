@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-
+              xmlns:fab="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-        <ImageView
+       <!-- <ImageView
             android:src="@mipmap/jianghan3"
             android:layout_width="match_parent"
             android:layout_height="400dp"/>
@@ -14,7 +13,7 @@
             android:id="@+id/svg_test"
             android:text="@string/svg_icon"
             android:layout_width="20dp"
-            android:layout_height="20dp"/>
+            android:layout_height="20dp"/>-->
 
         <TextView
             android:clickable="true"
@@ -23,7 +22,7 @@
             android:text="红灯"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <LinearLayout
+      <!--  <LinearLayout
             android:background="#f00"
             android:orientation="vertical"
             android:layout_width="81dp"
@@ -34,6 +33,36 @@
             android:id="@+id/nice_spinner"
             android:layout_width="80dp"
             android:layout_height="80dp"/>
-        </LinearLayout>
+        </LinearLayout>-->
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon"
+                    fab:fab_title="Action A"
+                  />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    fab:fab_title="Action with a very long name that won\'t fit on the screen"
+                 />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 </LinearLayout>

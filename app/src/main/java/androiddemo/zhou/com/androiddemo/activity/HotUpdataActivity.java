@@ -1,4 +1,4 @@
-package androiddemo.zhou.com.androiddemo.demo2;
+package androiddemo.zhou.com.androiddemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

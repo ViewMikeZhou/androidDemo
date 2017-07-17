@@ -1,4 +1,4 @@
-package androiddemo.zhou.com.androiddemo;
+package androiddemo.zhou.com.androiddemo.activity;
 
 import android.Manifest;
 import android.content.Context;
@@ -25,6 +25,9 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import androiddemo.zhou.com.androiddemo.PermissionUtils;
+import androiddemo.zhou.com.androiddemo.R;
 
 public class WifiActivity extends AppCompatActivity {
 
